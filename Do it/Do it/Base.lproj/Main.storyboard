@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Do_it" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do it!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGq-ZD-62p">
+                                <rect key="frame" x="140" y="244" width="134" height="68"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number, email or username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y85-P9-tfl">
+                                <rect key="frame" x="50" y="372" width="314" height="45"/>
+                                <color key="tintColor" red="0.86274516580000005" green="0.4352940917" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xAa-id-uOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-TR-pjR">
+                                <rect key="frame" x="50" y="447" width="314" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1Ay-Z3-8Ws"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdH-BS-wua">
+                                <rect key="frame" x="50" y="542" width="314" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hHz-OV-nFE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Forgot your login details?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbO-PS-kIH">
+                                <rect key="frame" x="90" y="607" width="133" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUM-Ma-hx3">
+                                <rect key="frame" x="225" y="611" width="139" height="6"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="7XV-kY-6D9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="eSH-ny-Ks5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get help signing in">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="GdH-BS-wua" firstAttribute="top" secondItem="4fB-TR-pjR" secondAttribute="bottom" constant="50" id="AUF-o5-ZFg"/>
+                            <constraint firstItem="SGq-ZD-62p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="EBK-3l-o2n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SGq-ZD-62p" secondAttribute="trailing" constant="140" id="I1g-7s-U6o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SGq-ZD-62p" secondAttribute="bottom" constant="550" id="LXx-IO-6Xw"/>
+                            <constraint firstItem="4fB-TR-pjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Lle-Nt-bsn"/>
+                            <constraint firstItem="jbO-PS-kIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="Ncw-VK-ciu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y85-P9-tfl" secondAttribute="trailing" constant="50" id="SZ5-8x-eyy"/>
+                            <constraint firstItem="Y85-P9-tfl" firstAttribute="top" secondItem="SGq-ZD-62p" secondAttribute="bottom" constant="60" id="T9K-yr-W4u"/>
+                            <constraint firstItem="oUM-Ma-hx3" firstAttribute="leading" secondItem="jbO-PS-kIH" secondAttribute="trailing" constant="2" id="Th9-S6-Rsc"/>
+                            <constraint firstItem="GdH-BS-wua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UEf-vv-M90"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GdH-BS-wua" secondAttribute="trailing" constant="50" id="bFQ-LR-R40"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4fB-TR-pjR" secondAttribute="trailing" constant="50" id="c96-Yq-bXy"/>
+                            <constraint firstItem="oUM-Ma-hx3" firstAttribute="top" secondItem="GdH-BS-wua" secondAttribute="bottom" constant="34" id="h48-wm-Zeh"/>
+                            <constraint firstItem="Y85-P9-tfl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="j11-Cm-y7R"/>
+                            <constraint firstItem="SGq-ZD-62p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="nxw-l9-UDr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUM-Ma-hx3" secondAttribute="trailing" constant="50" id="urH-K0-9CM"/>
+                            <constraint firstItem="4fB-TR-pjR" firstAttribute="top" secondItem="Y85-P9-tfl" secondAttribute="bottom" constant="30" id="utc-CT-CNi"/>
+                            <constraint firstItem="jbO-PS-kIH" firstAttribute="top" secondItem="GdH-BS-wua" secondAttribute="bottom" constant="30" id="vox-Fo-Qbl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
